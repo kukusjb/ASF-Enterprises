@@ -13,7 +13,7 @@
 
 <!-- Open Graph -->
 <meta property="og:title" content="ASF Enterprises, LLC — Friends of the Real Estate Community">
-<meta property="og:description" content="Escrow reconciliation, accounting, payroll and back-office services for title agents and real estate attorneys.">
+<meta property="og:description" content="Escrow reconciliation, accounting, payroll and back-office services for title agents and real estate agencies.">
 <meta property="og:url" content="https://asfenterprises.com/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://asfenterprises.com/ASF_logo.jpg">
@@ -24,7 +24,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "ASF Enterprises, LLC",
-  "description": "Escrow reconciliation, accounting, payroll, and administrative services for title agents and real estate attorneys.",
+  "description": "Escrow reconciliation, accounting, payroll, and administrative services for title agents and real estate agencies.",
   "url": "https://asfenterprises.com",
   "telephone": "+17279544951",
   "email": "info@asfenterprises.com",
@@ -77,7 +77,7 @@
 
   /* ── NAV ── */
   nav {
-    background: var(--black);
+    background: var(--charcoal-mid);
     padding: 0 48px;
     display: flex;
     align-items: center;
@@ -183,14 +183,23 @@
   }
 
   .hero-bg-leaf {
-    position: absolute;
-    right: -60px;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.04;
-    pointer-events: none;
-  }
-  .hero-bg-leaf svg { width: 520px; height: 520px; }
+  position: absolute;
+  right: 80px;        /* pull it in from the edge */
+  top: 75%;
+  transform: translateY(-50%);
+  width: 600px;       /* control the size here */
+  height: 600px;
+  opacity: 0.8;
+  pointer-events: none;
+  border-radius: 8px; /* optional, softens the edges */
+  overflow: hidden;
+}
+
+.hero-bg-leaf img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
   .hero-inner { max-width: 780px; position: relative; z-index: 1; }
 
@@ -653,10 +662,6 @@
         <path d="M20 40 C20 40, 14 32, 20 24 C26 32, 20 40, 20 40Z" fill="#2A5A2A" opacity="0.5"/>
       </svg>
     </div>
-    <div class="logo-text">ASF Enterprises, LLC
-      <span>Friends of the Real Estate Community</span>
-    </div>
-  </div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#why">About</a></li>
@@ -679,22 +684,19 @@
 <!-- ── HERO ── -->
 <section class="hero">
   <div class="hero-bg-leaf" aria-hidden="true">
-    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M250 50 C250 50, 80 130, 80 300 C80 420, 165 490, 250 490 C250 490, 250 280, 250 50Z" fill="white"/>
-      <path d="M250 50 C250 50, 420 130, 420 300 C420 420, 335 490, 250 490 C250 490, 250 280, 250 50Z" fill="white"/>
-    </svg>
-  </div>
+  <img src="jars.png" alt="">
+</div>
 <div class="hero-inner">
   <!-- Hidden but crawlable H1 for SEO -->
   <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
-    Escrow Reconciliation &amp; Back-Office Services for Title Agencies — ASF Enterprises, LLC
+    Escrow Reconciliation &amp; Data Call &amp; Back-Office Services for Title Agencies — ASF Enterprises, LLC
   </h1>
 
-  <div class="hero-eyebrow">Escrow · Accounting · Administrative Services</div>
+  <div class="hero-eyebrow">Accounting · Escrow · Administrative Services · HR Services</div>
   <h2 style="font-family:'Playfair Display',serif;font-size:clamp(50px,7vw,88px);font-weight:900;color:var(--white);line-height:1.0;letter-spacing:-1px;margin-bottom:24px;">
     Everything<br>non-revenue.<br><em style="color:var(--green-light);font-style:normal;">Handled.</em>
   </h2>
-    <p class="hero-sub">ASF Enterprises partners with title agents and real estate attorneys to manage the back-office work that matters — so you can stay focused on what actually grows your business.</p>
+    <p class="hero-sub">If it isn't generating revenue you shouldn't be doing it.ASF Enterprises partners with title agents and real estate agencies to manage the back-office work that matters — so you can stay focused on what actually grows your business.</p>
     <div class="hero-actions">
       <a href="#services" class="btn-primary">Explore our services</a>
       <a href="#contact" class="btn-ghost">Talk to our team</a>
@@ -713,12 +715,12 @@
     <div class="stat-label">Clients moved to better banking platforms</div>
   </div>
   <div class="stat">
-    <div class="stat-num">5+</div>
-    <div class="stat-label">Years trusted by title agencies</div>
+    <div class="stat-num">Since 2009</div>
+    <div class="stat-label">Trusted by title agencies</div>
   </div>
   <div class="stat">
     <div class="stat-num">100%</div>
-    <div class="stat-label">Favorable underwriter audit track record</div>
+    <div class="stat-label">Favorable audit track record</div>
   </div>
 </div>
 
@@ -726,17 +728,25 @@
 <div id="services" class="services-intro">
   <div class="eyebrow">What we do</div>
   <h2 class="section-title">A full back-office,<br>without the overhead.</h2>
-  <p class="section-sub">From escrow reconciliation to payroll and beyond — we cover every non-revenue function so nothing slips through the cracks.</p>
+  <p class="section-sub">From all financial accounting needs to escrow reconciliation, to payroll and beyond — we cover every non-revenue function so nothing slips through the cracks.</p>
 </div>
 
 <div class="services-grid">
+
+    <div class="service-card">
+    <div class="service-icon">
+      <svg viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+    </div>
+    <h3>Full accounting services</h3>
+    <p>Comprehensive bookkeeping and accounting for title agencies and attorneys — accurate, timely, and industry-specific.</p>
+  </div>
 
   <div class="service-card">
     <div class="service-icon">
       <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
     </div>
     <h3>Complete escrow reconciliation</h3>
-    <p>Full monthly reconciliation with a confirmed track record of favorable underwriter audits — unmatched in the industry.</p>
+    <p>Full monthly reconciliation with a confirmed track record of favorable underwriter audits — well-versed with all software — unmatched in the industry.</p>
   </div>
 
   <div class="service-card">
@@ -760,7 +770,7 @@
       <svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
     </div>
     <h3>Finance &amp; strategic advice</h3>
-    <p>Industry-specific financial reports, pro-formas, and strategic guidance to help you make sound decisions with confidence.</p>
+    <p>Industry-specific financial reports, pro-formas, banking administration assistance, and strategic guidance to help you make sound decisions with confidence.</p>
   </div>
 
   <div class="service-card">
@@ -775,16 +785,8 @@
     <div class="service-icon">
       <svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
     </div>
-    <h3>Data call reporting</h3>
-    <p>Software analysis, timekeeping training, and full data submission support — nearly every aspect handled for you.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="service-icon">
-      <svg viewBox="0 0 24 24"><path d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
-    </div>
-    <h3>Full accounting services</h3>
-    <p>Comprehensive bookkeeping and accounting for title agencies and attorneys — accurate, timely, and industry-specific.</p>
+    <h3>Financial and escrow software analysis</h3>
+    <p>Software analysis, timekeeping training, and full data submission support — every aspect handled for you.</p>
   </div>
 
   <div class="service-card">
@@ -792,7 +794,7 @@
       <svg viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
     </div>
     <h3>Consulting services</h3>
-    <p>Thinking of starting a title agency? Our consultants guide you through every decision with real-world experience.</p>
+    <p>Thinking of starting a title agency? or amending your current agency?Our consultants guide you through every decision with real-world experience.</p>
   </div>
 
 </div>
@@ -825,7 +827,7 @@
     <div class="why-callout-num">30%</div>
     <div class="why-callout-label">
       <strong>Average accounting savings</strong>
-      ASF saved clients an average of 30% in accounting services last year — without sacrificing quality or compliance.
+      ASF saved clients an average of 30% in accounting services — without sacrificing quality or compliance.
     </div>
   </div>
 </section>
@@ -838,7 +840,7 @@
 
     <div class="testi-card">
       <div class="quote-mark">"</div>
-      <p class="testi-text">Ginny and her team have managed our payroll, accounting, health insurance, and escrow management for five years. They go above and beyond in all areas, freeing me and my staff up to focus on other aspects of our company.</p>
+      <p class="testi-text">Ginny and her team have managed our payroll, accounting, health insurance, and escrow management since 2009. They go above and beyond in all areas, freeing me and my staff up to focus on other aspects of our company.</p>
       <div class="testi-author">
         <div class="author-name">Dave Kwasny</div>
         <div class="author-role">Owner/Partner · Greater Macomb Title</div>
@@ -847,7 +849,7 @@
 
     <div class="testi-card">
       <div class="quote-mark">"</div>
-      <p class="testi-text">I truly consider Ginny an extension of my agency. Her communication with me and my staff has been flawless. I can't imagine not having her as a part of my day-to-day operations after two and a half years.</p>
+      <p class="testi-text">I truly consider Ginny an extension of my agency. Her communication with me and my staff has been flawless. I can't imagine not having her as a part of my day-to-day operations since 2009.</p>
       <div class="testi-author">
         <div class="author-name">David M. Balsam</div>
         <div class="author-role">Agency Owner · Premier Lakeshore Title Agency</div>
@@ -875,11 +877,11 @@
     <div class="contact-details">
       <div class="contact-row">
         <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-        <span><a href="tel:+17279544951" style="color: inherit;">(727) 954-4951</a> office &nbsp;·&nbsp; (727) 498-7393 fax</span>
+        <span><a href="tel:+17279544951" style="color: inherit;">(727) 954-4951</a> office &nbsp;·&nbsp; (727) 498-7393 Cell &nbsp;·&nbsp; (850) 519-1108 fax</span>
       </div>
       <div class="contact-row">
         <svg viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-        <span><a href="mailto:info@asfenterprises.com" style="color: inherit;">info@asfenterprises.com</a></span>
+        <span><a href="mailto:info@asfenterprises.com" style="color: inherit;">info@asfenterprises.com &nbsp;·&nbsp; gself@asfenterprises.com</a></span>
       </div>
       <div class="contact-row">
         <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
@@ -938,7 +940,7 @@
 
 <!-- ── FOOTER ── -->
 <footer>
-  <div class="footer-copy">© 2026 ASF Enterprises LLC &nbsp;·&nbsp; Monticello, FL &nbsp;·&nbsp; Marketing by FincelDesign.com</div>
+  <div class="footer-copy">© 2026 ASF Enterprises LLC &nbsp;·&nbsp; Monticello, FL</div>
   <div class="footer-links">
     <a href="#">Home</a>
     <a href="#services">Services</a>
